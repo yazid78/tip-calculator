@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #c4e0e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.calculator {
+  display: flex;
+  gap: 40px;
+}
+
+.input-section,
+.tip-section,
+.people-section {
+  width: 100%;
+}
+
+.input-section label,
+.tip-section label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #d0e9f6;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.tip-section {
+  margin-top: 20px;
+}
+
+.tip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tip-btn,
+.tip-input {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #26c0ab;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+/* .tip-input:hover {
+
+} */
+.tip-input {
+  background-color: #f3f9fa;
+  color: black;
+  border: 2px solid #d0e9f6;
+}
+
+.tip-btn:hover {
+  background-color: #2bc3b3;
+}
+
+.people-section {
+  margin-top: 20px;
+}
+
+.people-section input {
+  width: 100%;
+}
+
+.error-message {
+  color: #ff5e5e;
+  font-size: 12px;
+  display: none;
+}
+
+.results-section {
+  background-color: #00474b;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.result-text h3 {
+  margin-bottom: 5px;
+}
+
+.amount {
+  font-size: 30px;
+}
+
+#reset-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #26c0ab;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+#reset-btn:hover {
+  background-color: #2bc3b3;
+}
+.error {
+  color: red;
+  display: none;
+}
+.input-section label {
+  display: flex;
+  justify-content: space-between;
+}
