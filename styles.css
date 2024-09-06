@@ -6,13 +6,17 @@
 }
 
 body {
-  background-color: #c4e0e5;
+  background-color: hsl(185, 41%, 84%);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
-
+.logo {
+  margin-bottom: 50px;
+  width: 6%;
+}
 .container {
   background-color: #ffffff;
   border-radius: 20px;
@@ -52,26 +56,28 @@ input[type="number"] {
 }
 
 .tip-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .tip-btn,
 .tip-input {
   flex: 1;
   padding: 15px;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 1.4rem;
   border: none;
   border-radius: 5px;
-  background-color: #26c0ab;
+  background-color: #00474b;
   color: white;
   text-align: center;
   cursor: pointer;
 }
-/* .tip-input:hover {
 
-} */
 .tip-input {
   background-color: #f3f9fa;
   color: black;
@@ -117,6 +123,9 @@ input[type="number"] {
 
 .amount {
   font-size: 30px;
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #reset-btn {
@@ -140,4 +149,39 @@ input[type="number"] {
 .input-section label {
   display: flex;
   justify-content: space-between;
+}
+#bill {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #00474b;
+}
+#people {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #00474b;
+}
+@media screen and (max-width: 768px) {
+  .tip-buttons {
+    grid-template-columns: 1fr 1fr;
+    max-width: 400px;
+  }
+  .calculator {
+    flex-direction: column;
+  }
+  .results-section {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container {
+    padding: 20px;
+  }
+  .tip-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .results-section {
+    width: 350px;
+    margin: auto;
+  }
 }
